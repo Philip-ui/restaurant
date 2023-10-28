@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take Away App</title>
+    <link rel="stylesheet" href="./style.css" />
+    
+    
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid">
+        <h4>Bazaar Restaurant</h4>
+        <div style="text-align: center; margin-bottom: 10px;">Confirmed Total Payment: <span id="total-payment"></span></div>
+        <div class="pay-method"><h5 style="text-align: left;">Make Payment using Credit/Debit Card or Bank Transfer</h5><br />
+              <span>Payment Method:</span>
+              <br /><br />
+                <div class="choose-form">
+                  <form action="">
+                    <div class="pay-method-card">
+                      <label>Credit/Debit Card</label>
+                      <div class="card">
+                        <input id="crdb-card" name="crdb-card" type="radio"><img src="./assets/visa-master.png" width="30%"/>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <input type="submit" value="Submit">
+                    </div>
+                  </form>
+                  <form action="">
+                    <div class="pay-method-bank">
+                      <label>Online Bank Transfer</label>
+                      <div class="bank">
+                        <div class="bank-logo">
+                         <input id="crdb-card" name="crdb-card" type="radio"><img src="./assets/alliance.webp" width="70%"/>
+                        </div>
+                        <div class="bank-logo">
+                         <input id="crdb-card" name="crdb-card" type="radio"><img src="./assets/ambank-group.png" width="70%"/>
+                        </div> 
+                        <div class="bank-logo">
+                          <input id="crdb-card" name="crdb-card" type="radio"><img src="./assets/maybank-square-logo.png" width="70%"/>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <input type="submit" value="Submit">
+                    </div>
+                  </form>
+                </div>
+        </div>
+      </div>
+        <script>
+            const totalPayment = localStorage.getItem('grand-total');
+            document.getElementById('total-payment').textContent = totalPayment;
+        </script>
+       
+    </main>
+  </body>
+  </html>
