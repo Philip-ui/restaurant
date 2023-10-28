@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaar Restaurant</title>   
+    
+    <!-- Stylesheets -->
+<!--<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="booking.css" />
+   
+
+    
+</head>
+<body>
+    <div class="home">
+        <a href="index.html" class="myButton">Back To Home</a>
+    </div>
+      <main style="padding: 1.5rem; margin: 0 auto; max-width: 600px; min-height:100vh;">
+        <h2>BOOK YOUR TABLE NOW</h2>
+        <container>
+            <h3>Reservation</h3>
+            <form class="clearfix" method="post" action="https://formsubmit.co/kokonn.chong@gmail.com">
+                <div class="form-row">
+                    <div class="col">
+                        <select id="days" name="days">
+                            <option value="day-select">Select Day</option>
+                            <option value="sunday">Sunday</option>
+                            <option value="monday">Monday</option>
+                            <option value="tuesday">Tuesday</option>
+                            <option value="wednesday">Wednesday</option>
+                            <option value="thursday">Thursday</option>
+                            <option value="friday">Friday</option>
+                            <option value="saturday">Saturday</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select id="hours" name ="hours">
+                            <option value="hour-select">Select Hour</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" id="fullname" name="fullname" placeholder="Full Name">
+                    </div>
+                    <div class="col">
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <input type="number" id="nopersons" name="nopersons" placeholder="How Many Persons?" min="1">
+                    <input id="submit" type="submit" name="submit" value="Book A Table">
+                </div>
+            </form>
+           
+        </container>
+      </main>
+    
+</body>
+</html>

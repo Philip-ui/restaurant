@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazaar Restaurant</title>   
+    
+    <!-- Stylesheets -->
+<!--<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,300italic' rel='stylesheet' type='text/css'>-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/docs.theme.min.css">
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/assets/owl.theme.default.min.css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->  
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+
+    <!-- javascript -->
+    <script type="module" src="./script.js" defer></script>
+    <script src="assets/vendors/jquery.min.js"></script>
+    <script src="assets/owlcarousel/owl.carousel.js"></script>
+    <!-- Flexslider -->
+    <link rel="stylesheet" href="./assets/css/flexslider/flexslider.css" type="text/css">
+    <!-- jQuery -->
+    <!--<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>--> 
+    <script src="./assets/js/flexslider/jquery.flexslider.js"></script>
+    
+</head>
+<body>
+   <!-- The navigation menu -->
+   <header>
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center">
+          <img src="./assets/img/bazaar-logo.png" width="35" height="35" alt="Inc Logo" />
+      <!--<span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>-->
+      </a>
+      <div class="flex md:order-2">
+      <!--<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>-->
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="menu.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Menu</a>
+          </li>
+          <li>
+            <a href="locations.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Locations</a>
+          </li>
+          <li>
+            <a href="gallery.html" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+  </header>
+<body>
+    <main style="padding: 1.5rem; margin: 60px auto; max-width: 1300px; min-height:100vh;">        
+        <h1 class="text-center mb-4 text-2xl"><b>Locations</b></h1>
+        <div class="row-locations"> 
+            <div class="col-desc">
+                <p> <span class="branch-title">Bar Mar</span><br />
+                    120 N Wacker Drive,<br />
+                    Chicago, IL 60606<br />
+                    (312) 820-6602<br /><br />
+                    Monday - Friday: 11 AM - 11 PM<br />
+                    Saturday: 3 PM - 11 PM<br />
+                    Sunday: 3 PM - 10 PM<br /><br />
+
+                    Fresh oysters piled on mounds of sparkling ice. Ceviches that taste of the ocean. Chef José Andrés’ brilliant renditions of iconic seafood classics like fried calamari and lobster rolls. Located at the Bank of America Tower in Chicago, Bar Mar is a true celebration of the bounty of the sea, with modern takes on classics you know and love, festive cocktails, and a bright, beautiful space that interweaves the nautical with the elegant.
+                    <br /><br />
+                    For a one-of-a-kind menu that weaves from inventive takes on carpaccio to ribeye aged to perfection, visit Bazaar Meat, located just above Bar Mar in the Bank of America Tower.
+                </p>
+            </div>
+            <div class="map-size">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.411762856593!2d-87.63722299999999!3d41.8840009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cb868d99437%3A0x9982cf056d371cc3!2s120%20N%20Upper%20Wacker%20Dr%2C%20Chicago%2C%20IL%2060606%2C%20USA!5e0!3m2!1sen!2smy!4v1690784140627!5m2!1sen!2smy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div class="row-locations"> 
+            <div class="col-desc">
+                <p> <span class="branch-title">Bazaar Meat</span><br />
+                    120 N Wacker Drive,<br />
+                    Chicago, IL 60606<br />
+                    (312) 820-6601<br /><br />
+                    Tuesday - Saturday: 4:30 PM - 11 PM<br />
+                    Sunday - Monday: Closed<br /><br />                    
+                    Underneath sparkling crimson chandeliers designed to mimic the flames of a volcano, sit for a curated tasting menu that weaves from raw preparations to the prized vaca vieja, or ribeye aged to perfection. As the flames in the fire kitchen flicker, you’ll have a one-of-a-kind meal, from inventive takes on carpaccio to the most tender rotisserie-style meat. No matter how many times you come see us at Bazaar, no two meals will be the same.
+                    <br /><br />
+                    For Chef José Andrés' brilliant renditions of iconic seafood classics-like fried calamari and lobster rolls-visit Bar Mar in the Bank of America Tower just below Bazaar Meat.
+                </p>
+            </div>
+            <div class="map-size">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.411762856593!2d-87.63722299999999!3d41.8840009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cb868d99437%3A0x9982cf056d371cc3!2s120%20N%20Upper%20Wacker%20Dr%2C%20Chicago%2C%20IL%2060606%2C%20USA!5e0!3m2!1sen!2smy!4v1690784140627!5m2!1sen!2smy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div class="row-locations"> 
+            <div class="col-desc">
+                <p> <span class="branch-title">Bazaar Meat</span><br />
+                    2535 S Las Vegas Blvd,<br />
+                    Las Vegas, NV 89109<br />
+                    702.761.7610<br /><br />
+                    Open 7 Days A Week: 5 PM - 10 PM<br /><br />                    
+                    Located in the Sahara Las Vegas, Bazaar Meat is a wild and wonderful celebration of the carnivorous, in all its forms. The design, ambiance and menu are adapted to resonate with a Las Vegas audience where bold choices, big flavor, and stunning showmanship rule the day.
+                    <br /><br />
+                    Guests at Bazaar Meat are invited to begin their evening with cocktails at Bar Centro and then progress to the expansive dining room, which takes open kitchens to the next level — from the dramatic fire kitchen with wood grills and rotisseries to the raw bars for ceviches, carpaccios and tartares. Two private dining rooms also offer unique environments—the Silver Room, with its striking all-silver décor, and the elegant Mar, with its open kitchen focused on seafood.
+                </p>
+            </div>
+            <div class="map-size">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.958788171545!2d-115.15712780000001!3d36.143216699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c476bf6b1385%3A0x3525a1c57ecf84a!2sBazaar%20Meat%20By%20Jos%C3%A9%20Andr%C3%A9s!5e0!3m2!1sen!2smy!4v1690861710620!5m2!1sen!2smy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <hr>
+        <div class="row-locations"> 
+            <div class="col-desc">
+                <p> <span class="branch-title">The Bazaar</span><br />
+                    Waldorf Astoria Washington DC<br />
+                    1100 Pennsylvania Avenue NW,<br />
+                    Washington, DC 20004<br />
+                    (202) 868-5088<br /><br />
+                    BREAKFAST: 7:30 AM - 2:30 PM<br />
+                    LUNCH: 11 AM- 2:30 PM<br />
+                    AFTERNOON SNACKS: 2:30 PM - 5 PM<br />
+                    DINNER:<br />
+                    Sunday - Thursday: 5 PM - 10 PM<br />
+                    Friday - Saturday: 5 PM - 11 PM<br /><br />
+                    Set in the Waldorf Astoria Washington DC, this Bazaar is the culmination of a 30-year dream for Chef José Andrés. Drawing inspiration from this iconic location, which first opened in 1899 and served as DC’s General Post Office until 1914, the Bazaar is a multi-level destination reinvented with avant-garde and Americana-inspired decor.
+                </p>
+            </div>
+            <div class="map-size">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.3006146522157!2d-77.02748009999999!3d38.894240399999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b792556c4bb3%3A0x91d0cc2575db0b81!2sThe%20Bazaar%20by%20Jos%C3%A9%20Andr%C3%A9s!5e0!3m2!1sen!2smy!4v1690789775749!5m2!1sen!2smy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        
+    </main>
+    <!-- Navigation Flowbite JS-->  
+    <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>  
+</body>
+<footer>
+    <!-- vendors -->
+    <script src="assets/vendors/highlight.js"></script>
+    <script src="assets/js/app.js"></script>  
+</footer>
+</html>
